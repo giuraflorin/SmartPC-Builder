@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WishlistActivity"
+    android:background="@drawable/ic_gray_bg">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewWishlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_above="@id/bottom_navigation"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Wishlist ❤️"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alegreya_bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <ListView
+                android:id="@+id/listViewWishlist"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:padding="8dp"
+                android:clipToPadding="false"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical"/>
+
+
+
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

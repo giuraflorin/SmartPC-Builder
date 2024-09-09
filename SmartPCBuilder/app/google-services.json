@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "134999432640",
+    "project_id": "smartpcbuilder-9e660",
+    "storage_bucket": "smartpcbuilder-9e660.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134999432640:android:f6e9f3629ef26147cffc25",
+        "android_client_info": {
+          "package_name": "com.example.smartpcbuilder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134999432640-551um5hfpe4u70bl5b4nv00bkeumrpli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG0vt1A5lFeQu_YMml5MqrIyq3k1z7LPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134999432640-551um5hfpe4u70bl5b4nv00bkeumrpli.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

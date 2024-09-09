@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".HomeActivity"
+    android:alpha="0.95">
+
+    <TextView
+        android:id="@+id/textViewPopUpTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔧 Your Custom PC Configuration🔧 "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="@font/alegreya_bold"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPopUpTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewProcessor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎮 Processor:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutProcessor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewProcessorRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewProcessorPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textViewSpaceProcessor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchProcessor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCooler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❄️ Cooler:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutCooler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewCoolerRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewCoolerPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price : 75.00 $"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewSpaceCooler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchCooler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewGraphicsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🕹️ Graphics Card:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/layoutGraphicsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewGraphicsCardRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewGraphicsCardPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textViewSpaceGraphicsCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchGraphicsCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/textViewMotherboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👑 Motherboard:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutMotherboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewMotherboardRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewMotherboardPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textViewSpaceMotherboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchMotherboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/textViewRAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚡ RAM:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutRAM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewRAMRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewRAMPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textViewSpaceRAM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchRAM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/textViewStorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📂 Storage:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutStorage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewStorageRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewStoragePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textViewSpaceStorage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewPowerSupply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔌 Power Supply:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutPowerSupply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewPowerSupplyRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewPowerSupplyPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textViewSpacePowerSupply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchPowerSupply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/textViewCase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 Case:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutCase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewCaseRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewCasePrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textViewSpaceCase"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchCase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewMonitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🖥  Monitor:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layoutMonitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewMonitorRecommendation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewMonitorPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textViewSpaceMonitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonSearchMonitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Search on Google"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewRecommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❗The prices may vary depending on the time of year and geographical location"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp" />
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This configuration will cost you approximately : "
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:fontFamily="@font/alegreya_bold"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/closeButton"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="16dp"
+                    app:backgroundTint="@color/black" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/saveButton"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Save to Whishlist"
+                    app:backgroundTint="@color/red" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/deleteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Delete"
+                    app:backgroundTint="@color/red" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_blur"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/login_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textView_login_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:text="Getting ready for your Smart choice..."
+                    android:textAlignment="center"
+                    android:fontFamily="@font/alegreya_bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_login_head"
+                    app:boxStrokeColor="@color/royal_blue"
+                    app:hintTextColor="@android:color/black"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText_login_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textInputLayout_email"
+                    app:boxStrokeColor="@color/royal_blue"
+                    app:hintTextColor="@android:color/black"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editText_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your password"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textInputLayout_password"
+                    android:layout_marginTop="24dp"
+                    android:text="Log In"
+                    app:cornerRadius="28dp"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    app:backgroundTint="#304FFE" />
+
+
+                <TextView
+                    android:id="@+id/textView_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_login"
+                    android:text=" OR "
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/alegreya_bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="2"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/textView_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/google_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Forgot your password? Click here!"
+                    android:textColor="@color/royal_blue"
+                    android:textSize="16sp" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/google_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_or"
+                    android:layout_marginBottom="32dp" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:elevation="10dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</ScrollView>
